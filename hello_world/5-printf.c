@@ -1,12 +1,13 @@
 /*
  * File: 5-printf.c
- * Auth: Brennan D Baraban
+ * Auth: David Vasquez
  */
 
 #include <stdio.h>
 
 /**
-  * main - prints "with proper grammar, but the outcome is a piece of art," followed by a new line.
+  * main - prints "with proper grammar, but the outcome is 
+  *                a piece of art," followed by a new line.
   *
   * Return: Always 0.
   */
