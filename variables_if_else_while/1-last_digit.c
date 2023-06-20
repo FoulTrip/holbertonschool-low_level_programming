@@ -1,6 +1,6 @@
 /*
  * File: 1-last_digit.c
- * Auth: David Vasquez
+ * Auth: David Vasquez M
  */
 
 #include <stdlib.h>
