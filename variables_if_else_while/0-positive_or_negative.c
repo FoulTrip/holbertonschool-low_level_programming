@@ -12,7 +12,7 @@
  *        variable n each time it is executed.
  *
  * Return: Always 0.
- */
+*/
 int main(void)
 {
 	int n;
