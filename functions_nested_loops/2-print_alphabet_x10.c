@@ -1,5 +1,4 @@
 #include "main.h"
-int
 
 /**
  * main - prints 10 times the alphabet
