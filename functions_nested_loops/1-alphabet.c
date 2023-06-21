@@ -3,18 +3,18 @@
  * Auth: david Vasquez 
  */
 
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_alphabet - print alphabet
  *
  */
-char print_alphabet(void)
+void print_alphabet(void)
 {
 	char letter;
 
 	for (letter = 'a'; letter < 'z'; letter++)
-		putchar(letter);
+		_putchar(letter);
 
-	putchar('\n')
+	putchar('\n');
 }
