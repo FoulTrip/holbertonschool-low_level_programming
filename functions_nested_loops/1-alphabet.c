@@ -3,13 +3,13 @@
  * Auth: david Vasquez 
  */
 
-#include <main.h>
+#include "main.h"
 
 /**
  * print_alphabet - print alphabet
  *
  */
-char print_alphabet(void)
+void print_alphabet(void)
 {
 	char letter;
 
