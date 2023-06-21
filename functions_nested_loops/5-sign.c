@@ -4,7 +4,9 @@
  * print_sign - prints the sign of a number.
  * @n: The parament
  *
- * Return: 0 and 1
+ * Return: 1 if the number is greater than zero.
+ *         0 if the number is zero.
+ *         -1 if the number is less than zero.
  */
 int print_sign(int n)
 {
@@ -22,5 +24,4 @@ int print_sign(int n)
 		return (-1);
 	}
 
-	return (0);
 }
