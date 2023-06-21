@@ -8,7 +8,7 @@
 /**
  * print_alphabet - print alphabet
  */
-void print_alphabet(_putchar)
+void print_alphabet(void)
 {
 	char letter;
 
