@@ -1,10 +1,17 @@
 #include "main.h"
+void print_alphabet_x10(void);
 
 /**
  * main - prints 10 times the alphabet
  *
  * Return: Always 0.
  */
+int main(void)
+{
+    print_alphabet();
+    return (0);
+}
+
 void print_alphabet_x10(void)
 {
 	char letter;
@@ -18,7 +25,6 @@ void print_alphabet_x10(void)
 		}
 
 		_putchar('\n');
-
 		number ++;
 	}
 }
