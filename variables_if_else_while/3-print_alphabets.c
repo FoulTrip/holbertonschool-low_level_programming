@@ -1,6 +1,6 @@
 /*
  * File: 3-print_alphabets.c
- * Auth: David Vasquez 
+ * Auth: David Vasquez
  */
 
 #include <stdio.h>
