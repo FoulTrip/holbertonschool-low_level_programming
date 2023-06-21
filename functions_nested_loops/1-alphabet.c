@@ -9,18 +9,13 @@
  * print_alphabet - print alphabet
  */
 void print_alphabet(void)
-{
-	int _putchar(char letter)
-	{
-		return (write(1, &c, 1));
-	}
-	
-	char letter;
+{	
+	char c;
 
-	while (letter <= 'z')
+	while (c <= 'z')
 	{
-		_putchar(letter);
-		letter++;
+		_putchar(c);
+		c++;
 	}
 
 	putchar('\n');
