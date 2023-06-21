@@ -1,8 +1,3 @@
-/*
- * File: 1-alphabet.c
- * Auth: david Vasquez 
- */
-
 #include "main.h"
 
 /**
@@ -16,4 +11,6 @@ void print_alphabet(void)
 	{
 		_putchar(c);
 	}
+
+	_putchar('\n');
 }
