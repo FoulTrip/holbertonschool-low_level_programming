@@ -1,6 +1,6 @@
 /*
  * File: 7-print_tebahpla.c
- * Auth: David Vasquez 
+ * Auth: David Vasquez
  */
 
 #include <stdio.h>
