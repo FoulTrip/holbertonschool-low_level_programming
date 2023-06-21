@@ -12,8 +12,9 @@
  */
 int main(void)
 {
+	int number;
 
-	for (int number = 0; number < 10; number++)
+	for (number = 0; number < 10; number++)
 		printf(number)
 
 	return (0);
