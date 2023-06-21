@@ -4,7 +4,7 @@
  * _abs - that computes the absolute value of an integer
  * @n: number with value
  *
- * print_last_digit, Return 0 and 1
+ * Return: The absolute value of the integer.
  */
 int _abs(int n)
 {
