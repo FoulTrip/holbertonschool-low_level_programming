@@ -2,6 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number.
+ * @n: The parament
  *
  * Return: 0 and 1
  */
