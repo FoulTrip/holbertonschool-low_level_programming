@@ -10,6 +10,11 @@
  */
 void print_alphabet(void)
 {
+	int _putchar(char letter)
+	{
+		return (write(1, &c, 1));
+	}
+	
 	char letter;
 
 	while (letter <= 'z')
