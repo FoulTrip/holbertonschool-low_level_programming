@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 void print_alphabet_x10(void);
 
 /**
@@ -10,6 +11,11 @@ int main(void)
 {
     print_alphabet_x10();
     return (0);
+}
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
 
 void print_alphabet_x10(void)
