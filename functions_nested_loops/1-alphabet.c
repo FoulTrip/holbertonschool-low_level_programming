@@ -4,7 +4,6 @@
  */
 
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_alphabet - print alphabet
@@ -19,5 +18,5 @@ void print_alphabet(void)
 		letter++;
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }
