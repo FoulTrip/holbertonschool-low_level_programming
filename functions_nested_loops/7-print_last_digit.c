@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit.c - prints the last digit of a number.
+ * print_last_digit - prints the last digit of a number.
  * @n: number with value
  *
  * Return: The absolute value of the integer.
