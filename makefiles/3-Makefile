@@ -1,5 +1,8 @@
 CC = gcc
 SRC = main.c school.c
+/* La expression dentro de OBJ se utiliza para generar una lista de nombres
+de archivos de objetos (archivos con extensión .o) a partir de una 
+lista de nombres de archivos fuente (archivos con extensión .c). */
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
