@@ -15,20 +15,23 @@ void print_diagonal(int n)
 {
 	int diagonal, space
 
-	for (diagonal = 0; diagonal < n; diagonal++)
+	if (n > 0)
 	{
-		for (space = 0; space < diagonal; space++)
-		{
-			_putchar(' ');
-		}
+		for (diagonal = 0; diagonal < n; diagonal++)
+	        {
+			for (space = 0; space < diagonal; space++)
+		        {
+				_putchar(' ');
+		        }
+			_putchar('\\');
 
-	        _putchar('\\');
-	        
-                if (diagonal == n - 1)
-		{
-			continue;
+			if (diagonal == n - 1)
+		        {
+				continue;
+		        }
 		}
 
 		_putchar('\n');
 	}
+	
 }
