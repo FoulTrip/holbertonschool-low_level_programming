@@ -17,22 +17,23 @@ int main(void)
 
 	for (initNum = 0; initNum <= 100; initNum++)
 	{
-		if (initNum % 3 == 0)
-		{
-			printf("fizz"); 
-		}
+		if ((initNum % 3) == 0 && (initNum % 5) == 0)
+			printf("fizzBuzz"); 
 
-
-		if (initNum % 5 == 0)
-		{
+		else if ((initNum % 5) == 0)
 			printf("buzz");
-		}
 
-		if (initNum % 3 == 0 && initNum % 5 == 0)
-		{
+		else if ((initNum % 3) == 0 )
 			printf("FizzBuzz");
-		}
+		else
+			printf("%d", initNum);
+
+		if (num == 100)
+			continue;
+		printf(" ");
 	}
+
+	printf("\n");
 
 	return (0);
 }
