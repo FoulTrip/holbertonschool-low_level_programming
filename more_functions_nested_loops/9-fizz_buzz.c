@@ -15,7 +15,7 @@ int main(void)
 {
 	int initNum;
 
-	for (initNum = 0; initNum <= 100; initNum++)
+	for (initNum = 1; initNum <= 100; initNum++)
 	{
 		if ((initNum % 3) == 0 && (initNum % 5) == 0)
 			printf("fizzBuzz"); 
