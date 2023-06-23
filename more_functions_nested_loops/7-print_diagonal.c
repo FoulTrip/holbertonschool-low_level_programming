@@ -13,13 +13,22 @@
  */
 void print_diagonal(int n)
 {
-	int diagonal;
+	int diagonal, space
 
-	if (n > 0)
+	for (diagonal = 0; diagonal < n; diagonal++)
 	{
-		for (diagonal = 0; diagonal < n; diagonal++)
-		       _putchar('/');	
-	}
+		for (space = 0; space < diagonal; space++)
+		{
+			_putchar(' ');
+		}
 
-	_putchar('\n');
+	        _putchar('\\');
+	        
+                if (diagonal == n - 1)
+		{
+			continue;
+		}
+
+		_putchar('\n');
+	}
 }
