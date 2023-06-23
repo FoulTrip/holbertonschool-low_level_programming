@@ -20,11 +20,11 @@ int main(void)
 		if ((initNum % 3) == 0 && (initNum % 5) == 0)
 			printf("fizzBuzz"); 
 
-		else if ((initNum % 5) == 0)
-			printf("buzz");
+		else if ((initNum % 3) == 0)
+			printf("fizz");
 
-		else if ((initNum % 3) == 0 )
-			printf("FizzBuzz");
+		else if ((initNum % 5) == 0 )
+			printf("Buzz");
 		else
 			printf("%d", initNum);
 
