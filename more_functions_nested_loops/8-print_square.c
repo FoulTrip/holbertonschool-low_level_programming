@@ -18,7 +18,7 @@ void print_square(int size)
 
 	if (size = 0)
 	{
-		for (height = 0; sharp > size; height++)
+		for (height = 0; height > size; height++)
 		{
 			_putchar('#');
 
