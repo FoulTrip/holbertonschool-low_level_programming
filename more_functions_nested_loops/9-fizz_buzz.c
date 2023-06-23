@@ -3,7 +3,7 @@
  * Auth: David Vasquez 
  */
 
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - function de fizz buzz
