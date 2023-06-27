@@ -14,5 +14,8 @@
  */
 void _puts(char *str)
 {
-	printf("%s", *str);
+	while(*str)
+		_putchar(*str++);
+
+	_putchar('\n');
 }
