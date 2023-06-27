@@ -19,7 +19,7 @@ void print_rev(char *s)
 	while (s[index++])
 		length++;
 
-	for (index = length - 1; index >= lenghth / 2; index--)
+	for (index = length - 1; index >= length / 2; index--)
 	{
 		rev = s[index];
 		s[index] = s[length - index - 1];
