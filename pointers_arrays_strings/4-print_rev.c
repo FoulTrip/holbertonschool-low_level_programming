@@ -7,7 +7,7 @@
 
 /**
  * print_rev - Reverses a string.
- * @s: The string to be reversed.
+ * @s: parameter pointer.
  */
 void print_rev(char *s)
 {
