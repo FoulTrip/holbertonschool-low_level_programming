@@ -11,9 +11,9 @@
  *
  * Return: Always 0.
  */
-size_t _strlen(char *s)
+int _strlen(char *s)
 {
-	size_t length = 0;
+	int length = 0;
 
 	while (*s++)
 		length++;
