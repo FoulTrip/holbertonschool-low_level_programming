@@ -1,5 +1,5 @@
 /*
- * File: 5-rev_string.c
+ * File: 4-print_rev.c
  * Auth: David Vasquez
  */
 
