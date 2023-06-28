@@ -16,7 +16,7 @@ char *leet(char *letter)
 	while (*pointer != '\0')
 	{
 		int index = 0;
-		int isReplced = 0;
+		int isReplaced = 0;
 
 		while (leetChars[index] != '\0')
 		{
@@ -26,14 +26,14 @@ char *leet(char *letter)
 				isReplaced = 1;
 				break;
 			}
-			index++
+			index++;
 		}
 		if (!isReplaced)
 		{
 			*pointer = *pointer;
 		}
 
-		pointer++
+		pointer++;
 	}
 
 	return (letter);
