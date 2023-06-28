@@ -29,5 +29,5 @@ char *cap_string(char *letter)
 		pointer++;
 	}
 
-	return letter;
+	return (letter);
 }
