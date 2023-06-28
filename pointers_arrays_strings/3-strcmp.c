@@ -4,7 +4,7 @@
  * _strcmp - compares two strings
  * @s1: first chain text
  * @s2: second chain text
- * 
+ *
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
@@ -15,5 +15,5 @@ int _strcmp(char *s1, char *s2)
 		s2++;
 	}
 
-	return (int)(*s1 - *s2);
+	return (*s1 - *s2);
 }
