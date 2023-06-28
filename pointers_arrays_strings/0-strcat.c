@@ -1,8 +1,3 @@
-/*
- * File: 0-strcat.c
- * Auth: David Vasquez
- */
-
 #include "main.h"
 
 char *_strcat(char *dest, char *src)
