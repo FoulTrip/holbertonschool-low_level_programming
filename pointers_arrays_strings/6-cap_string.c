@@ -8,24 +8,26 @@
  */
 char *cap_string(char *letter)
 {
-	int conversion, index, count;
+	int index, count;
+	int conversion = 1;
 
 	char chars[] = {' ', ',', ';', '.', '!',
 			 '?', '"', '(', ')', '{', '}',  '\t', '\n', '\0'};
-	conversion = 32;
 
 	for (index = 0; letter[index] != '\0'; index++)
 	{
-		if (letter[index] >= 'index' && letter[index] <= 'z')
+		if (conversion && letter[index] >= 'a' && letter[index] <= 'z')
 		{
-			letter[index] =  letter[index] - conversion;
+			letter[index] = letter[index] - ('a' - 'A');
 		}
+
 		conversion = 0;
+
 		for (count = 0; chars[count] != '\0'; count++)
 		{
 			if (chars[count] == letter[index])
 			{
-				conversion = 32;
+				conversion = 1;
 				break;
 			}
 		}
