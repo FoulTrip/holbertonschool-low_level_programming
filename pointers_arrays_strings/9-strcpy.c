@@ -1,8 +1,3 @@
-/*
- * File: 9-strcpy.c
- * Auth: David vasquez
- */
-
 #include "main.h"
 
 /**
