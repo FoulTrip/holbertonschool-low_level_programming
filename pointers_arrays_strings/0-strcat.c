@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-  * _strcat -  concatenates two strings.
-  * @dest - chain text of destine
-  * @src - font of text
+  * *_strcat -  concatenates two strings.
+  * @*dest - chain text of destine
+  * @*src - font of text
   */
 char *_strcat(char *dest, char *src)
 {
