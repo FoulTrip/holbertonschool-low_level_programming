@@ -14,7 +14,7 @@ char *cap_string(char *letter)
 
 	while (*pointer != '\0')
 	{
-		if (isspace(*pointer) || ispunc(*pointer))
+		if (isspace(*pointer) || ispunct(*pointer))
 		{
 			nextConvert = 1;
 		}
