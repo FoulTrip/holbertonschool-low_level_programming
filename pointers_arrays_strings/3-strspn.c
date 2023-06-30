@@ -3,7 +3,7 @@
 /**
  * _strspn - gets the length of a prefix substring
  * @s: initialString
- * @c: compare String
+ * @accept: compare String
  *
  * Return: number of byts
  */
@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	counter = 0;
 
-	for (index = 0; s[indexOrigin] != '\0'; index++)
+	for (indexOrigin = 0; s[indexOrigin] != '\0'; indexOrigin++)
 	{
 		for (indexCopy = 0; accept[indexCopy] != '\0'; indexCopy++)
 		{
