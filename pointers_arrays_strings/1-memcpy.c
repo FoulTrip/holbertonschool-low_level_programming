@@ -9,15 +9,13 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char copyMemory = *dest;
+	unsigned int count;
+	char copyDest = dest;
+	char const copySRC = src;
 
-	while (n > 0)
+	for (count = 0; count < n; count++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
-		n--;
+		*copyDest++ = copySRC++;
 	}
-
-	return (*copyMemory);
+	return (dest);
 }
