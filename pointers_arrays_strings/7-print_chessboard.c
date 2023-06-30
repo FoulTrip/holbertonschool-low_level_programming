@@ -10,7 +10,7 @@ void print_chessboard(char (*a)[8])
 {
 	int index, count;
 
-	for (index = 0; index < 8; count++)
+	for (index = 0; a[index][7]; index++)
 	{
 	        for (count = 0; count < 8; count++)
 		{
