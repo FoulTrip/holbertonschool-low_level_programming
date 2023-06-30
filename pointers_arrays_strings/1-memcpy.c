@@ -10,12 +10,12 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int count;
-	char copyDest = dest;
-	char const copySRC = src;
+	char *copyDest = dest;
+	char const *copySRC = src;
 
 	for (count = 0; count < n; count++)
 	{
-		*copyDest++ = copySRC++;
+		*copyDest++ = *opySRC++;
 	}
 	return (dest);
 }
