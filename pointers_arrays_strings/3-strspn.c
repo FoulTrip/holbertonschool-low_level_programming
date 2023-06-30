@@ -3,7 +3,7 @@
 /**
  * _strspn - gets the length of a prefix substring
  * @s: initialString
- * @c: compare String
+ * @accept: compare String
  *
  * Return: number of byts
  */
