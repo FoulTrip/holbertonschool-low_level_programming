@@ -4,6 +4,8 @@
  * _strpbrk - searches a string for any of a set of bytes.
  * @s: Init String
  * @accept: find in String
+ *
+ * Return: byte s
  */
 char *_strpbrk(char *s, char *accept)
 {
