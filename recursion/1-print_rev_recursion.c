@@ -6,17 +6,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int lenght = 0, index = 0;
-	char temporal;
-
-	while (s[index++])
-		lenght++;
-
-	for (index = lenght - 1; index >= lenght / 2; index++)
+	if (*s)
 	{
-		temporal = s[index];
-		s[index] = s[lenght - index - 1];
-		s[lenght - index - 1] = temporal;
-		_print_rev_recursion(s);
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
 }
