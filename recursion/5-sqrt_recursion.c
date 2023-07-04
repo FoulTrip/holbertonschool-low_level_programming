@@ -1,34 +1,40 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - natural square root of a number.
- * @n: parameter
+ * copy_sqrt_recursion - To perform a recursive binary search
  *
- * Return: natural square
+ * @a: The entry is equal to n
+ * @b: This is the sum
+ *
+ * Return: Always 0.
+ */
+int copy_sqrt_recursion(int a, int b)
+{
+	/* we take two parameters: a and b. We compare if "a" 
+	   is equal to the square of "b", if so, we return "b", 
+           which means that "b" is the square root of "a". 
+	   If the square of b is greater than or equal to "a", we return -1.*/
+	if (a == (b * b))
+		return (b);
+	else if ((b * b) >= a)
+		return (-1);
+	else
+		return (copy_sqrt_recursion(a, b + 1));
+}
+
+/**
+ * _sqrt_recursion -  the natural square root of a number.
+ * @n: value
+ *
+ * Return: This is result of the function copy_sqrt_recursion
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	/* The function "_sqrt_recursion" takes a number "n" as a parameter. 
+            If "n" is less than or equal to 0, it returns -1. Otherwise, it calls 
+	    "copy_sqrt_recursion" with the values "n" and 0, which starts the 
+            recursive process to find the square root of "n". */
+	if (n <= 0)
 		return (-1);
-
-	if (n == 0 || n == 1)
-		return (n);
-
-	return (recursive_sqrt(n, 1, n));
-}
-
-int recursive_sqrt(int n, int start, int end)
-{
-	if (start > end)
-		return (-1);
-
-	int mid = (start + end) / 2;
-	
-	if (mid * mid == n)
-		return (mid);
-
-	if (mid * mid > n)
-		return (recursive_sqrt(n, start, mid - 1));
-
-	return (recursive_sqrt(n, mid + 1, end));
+	return (copy_sqrt_recursion(n, 0));
 }
