@@ -9,10 +9,10 @@
  */
 int prime_verify(int number, int divisor)
 {
-	if ((number % divisor) == 0)
+	if (number % divisor == 0)
 		return (0);
 
-	if ((divisor == number) / 2)
+	if (divisor == number / 2)
 		return (1);
 
 	return (prime_verify(number, divisor + 1));
