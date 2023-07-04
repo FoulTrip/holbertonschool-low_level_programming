@@ -6,17 +6,6 @@
  *
  * Return: natural square
  */
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-
-	if (n == 0 || n == 1)
-		return (n);
-
-	return (recursive_sqrt(n, 1, n));
-}
-
 int recursive_sqrt(int n, int start, int end)
 {
 	if (start > end)
@@ -31,4 +20,15 @@ int recursive_sqrt(int n, int start, int end)
 		return (recursive_sqrt(n, start, mid - 1));
 
 	return (recursive_sqrt(n, mid + 1, end));
+}
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+
+	if (n == 0 || n == 1)
+		return (n);
+
+	return (recursive_sqrt(n, 1, n));
 }
