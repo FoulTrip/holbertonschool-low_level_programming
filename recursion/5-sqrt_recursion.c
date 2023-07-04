@@ -1,34 +1,32 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - natural square root of a number.
- * @n: parameter
+ * copy_sqrt_recursion - To perform a recursive binary search
  *
- * Return: natural square
+ * @a: The entry is equal to n
+ * @b: This is the sum
+ *
+ * Return: Always 0.
  */
-int recursive_sqrt(int n, int start, int end)
+int copy_sqrt_recursion(int a, int b)
 {
-	if (start > end)
+	if (a == (b * b))
+		return (b);
+	else if ((b * b) >= a)
 		return (-1);
-
-	int mid = (start + end) / 2;
-	
-	if (mid * mid == n)
-		return (mid);
-
-	if (mid * mid > n)
-		return (recursive_sqrt(n, start, mid - 1));
-
-	return (recursive_sqrt(n, mid + 1, end));
+	else
+		return (copy_sqrt_recursion(a, b + 1));
 }
 
+/**
+ * _sqrt_recursion -  the natural square root of a number.
+ * @n: value
+ *
+ * Return: This is result of the function copy_sqrt_recursion
+ */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	if (n <= 0)
 		return (-1);
-
-	if (n == 0 || n == 1)
-		return (n);
-
-	return (recursive_sqrt(n, 1, n));
+	return (copy_sqrt_recursion(n, 0));
 }
