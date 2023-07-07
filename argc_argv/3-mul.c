@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 
 	for (index = 1; index < argc; index++)
 	{
+		/* Pasamos el valor de argv[index] a entero con atoi */
 		multiplicando = multiplicando * atoi(argv[index]);
 	}
 
