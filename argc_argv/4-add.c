@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	for (index = 1; index < argv; index++)
+	for (index = 1; index < argc; index++)
 	{
 		sum += atoi(argv[index]);
 	}
