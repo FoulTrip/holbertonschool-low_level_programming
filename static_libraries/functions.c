@@ -37,7 +37,6 @@ int _strlen(char *s)
 
 void _puts(char *s)
 {
-	return(0);
 }
 
 char *_strcpy(char *dest, char *src)
