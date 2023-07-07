@@ -1,10 +1,10 @@
 #include <unistd.h>
 
 /**
- * _putchar.c - write the characters
+ * _putchar - write the characters
  * @c: character print
  *
- * Return: On succes 1.
+ * Return: On sucess 1.
  */
 int _putchar(char c)
 {
