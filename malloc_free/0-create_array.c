@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * create_array - creates an array of chars, 
+ * create_array - creates an array of chars,
  *                and initializes it with a specific char.
  * @size: lenght of array
  * @c: input character
@@ -20,7 +20,9 @@ char *create_array(unsigned int size, char c)
 	if (s == NULL)
 		return (NULL);
 	for (iterator = 0; iterator < size; iterator++)
+	{
 		s[iterator] = c;
+	}
 
 	return (s);
 }
