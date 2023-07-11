@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 				if (str[b] < 48 || str[b] > 57)
 				{
 					printf("Error\n");
-					return(1);
+					return (1);
 				}
 			}
 		}
 	}
-	for (index = 1; index < argv; index++)
+	for (index = 1; index < argc; index++)
 	{
 		sum += atoi(argv[index]);
 	}
