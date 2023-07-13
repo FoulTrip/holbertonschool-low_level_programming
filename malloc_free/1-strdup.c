@@ -9,11 +9,11 @@
  *
  * Return: copy of string
  */
-char *_strdup(char* str)
+char *_strdup(char *str)
 {
 	char *copy;
 	int index, copyIndex;
-	
+
 	if (str == NULL)
 		return NULL;
 
