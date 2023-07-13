@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strdup -  returns a pointer to a newly allocated space in memory,
@@ -9,19 +9,26 @@
  *
  * Return: copy of string
  */
-char* _strdup(char* str)
+char *_strdup(char *str)
 {
+	char *copy;
+	int index, copyIndex;
+
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
-	size_t lenght = strlen(str);
+	for (index = 0; str[index] != '\0'; index++)
+		;
 
-	char* copy = (char*)malloc((lenght + 1) * sizeof(char));
+	copy = (char *) malloc((index + 1) * sizeof(char));
 
 	if (copy == NULL)
-		return NULL;
+		return (NULL);
 
-	strcpy(copy, str);
+	for (copyIndex = 0; copyIndex < index; copyIndex++)
+		copy[copyIndex] = str[copyIndex];
+
+	copy[index + 1] = '\0';
 
 	return (copy);
 }
