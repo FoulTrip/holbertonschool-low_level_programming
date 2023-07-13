@@ -9,7 +9,7 @@
  *
  * Return: copy of string
  */
-char* _strdup(char* str)
+char *_strdup(char* str)
 {
 	char *copy;
 	int index, copyIndex;
@@ -17,7 +17,7 @@ char* _strdup(char* str)
 	if (str == NULL)
 		return NULL;
 
-	for (index = 0; str[0] != '\0'; index++)
+	for (index = 0; str[index] != '\0'; index++)
 		;
 
 	copy = (char *) malloc((index + 1) * sizeof(char));
