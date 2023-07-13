@@ -35,7 +35,5 @@ char *str_concat(char *s1, char *s2)
 		firstIndex++;
 	}
 
-	return (finalString)
-		
-		return (finalString);
+	return (finalString);
 }
