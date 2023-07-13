@@ -20,6 +20,13 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
+	for (firstIndex = 0; s1[firstIndex] != '\0'; firstIndex++)
+	{
+	}
+	for (secondIndex = 0; s2[secondIndex] != '\0'; secondIndex++)
+	{
+	}
+
 	finalString = (char *) malloc(((firstIndex + secondIndex) + 1) * sizeof(char));
 
 	if (finalString == NULL)
