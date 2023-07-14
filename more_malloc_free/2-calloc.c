@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
         char *content;
         unsigned int index;
 
-	if (memory == NULL)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	content = memory;
