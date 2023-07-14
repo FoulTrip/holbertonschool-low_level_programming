@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (index = 0; s2[index] && index < n; index++)
 		concatString[lenght++] = s2[index];
 
-	concat[lenght] = '\0';
+	concatString[lenght] = '\0';
 
 	return (concatString);
 }
