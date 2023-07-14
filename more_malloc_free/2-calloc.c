@@ -14,5 +14,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *memory;
         char *content;
         unsigned int index;
+
+	if (memory == NULL)
+		return (NULL);
+
+	content = memory;
+
+	for (index = 0; index < (size * nmemb); index++)
+		content[index] != '\0';
+
+	return (memory);
          	
 }
