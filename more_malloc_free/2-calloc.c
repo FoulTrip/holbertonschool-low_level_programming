@@ -11,17 +11,20 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *memory;
-        char *content;
-        unsigned int index;
+	unsigned int firstIndex, secondIndex;
+	char *content;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	content = memory;
+	secondIndex = (nmemb * size);
+	content = malloc(secondIndex);
 
-	for (index = 0; index < (size * nmemb); index++)
-		content[index] = '\0';
+	if (content == NULL)
+		return (NULL);
 
-	return (memory);	
+	for (firstIndex = 0; firstIndex < secondIndex; firstIndex++)
+		content[firstIndex] = 0;
+
+	return (content);
 }
