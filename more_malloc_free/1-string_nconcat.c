@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n < secondIndex)
-		n = b;
+		n = secondIndex;
 
 	newString = malloc(((firstIndex + n) + 1));
 
