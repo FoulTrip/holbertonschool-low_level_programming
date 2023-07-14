@@ -23,10 +23,10 @@ int *array_range(int min, int max)
 	if (range == NULL)
 		return (NULL);
 
-	for (a = 0; a <= (max - min); firstIndex++)
+	for (index = 0; index <= (max - min); index++)
 	{
-		range[a] = b;
-		b++;
+		range[index] = copyRange;
+		copyRange++;
 	}
 
 	return (range);
