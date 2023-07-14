@@ -7,7 +7,7 @@
  * @s1: first string
  * @s2: second string
  * @n: limit
- * 
+ *
  * Return: string concatened
  */
 
