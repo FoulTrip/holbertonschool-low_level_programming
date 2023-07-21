@@ -3,12 +3,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - function that prints strings, followed by a new line
- *
- * @separator: input inseparator
- * @n: number items
+ * print_strings - prints strings
+ * @separator: Input separator
+ * @n: Number item
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
@@ -23,8 +21,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		else
 			printf("%s", s);
+
 		if (separator != NULL && (count + 1) != n)
-			print("%s", separator);
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(ap);
