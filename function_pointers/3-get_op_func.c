@@ -22,9 +22,9 @@ int (*get_op_func(char *s))(int, int)
 
 	int index = 0;
 
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
-		i++;
+	while (ops[index].op != NULL && *(ops[index].op) != *s)
+		index++;
 
-	return (ops[i].f);
+	return (ops[index].f);
 	
 }
