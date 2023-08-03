@@ -1,21 +1,5 @@
 #include "lists.h"
-
-/**
- * lenght_string - lenght of string
- * @str: string
- *
- * Return: lenght of string
- */
-int lenght_string(const char *str)
-{
-	int count;
-	
-	if (str == NULL)
-		return (0);
-	for (count = 0; str[count] != '\0'; count++)
-		;
-	return (count);
-}
+#include <string.h>
 
 /**
  * add_node - function that adds a new node at the beginning of a list_t list.
@@ -26,13 +10,31 @@ int lenght_string(const char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node = (list_t *) malloc(sizeof(list_t));
+	char *clon;
+	int lenght;
+	list_t *new;
 
-	if (new_node == NULL)
+	new = malloc(sizeof(list_t));
+
+	if (new == NULL)
 		return (NULL);
-	new_node->str = strdup(str);
-	new_node->len = lenght_string(str);
-	new_node->next = (*head);
-	(*head) = new_node;
-	return (*head);
+
+	clon = strdup(str);
+
+	if (clon == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
+
+	for (lenght = 0; str[lenght];)
+		lenght++;
+
+	new->str = clon;
+	new->lenght = lenght;
+	new->next = *head;
+
+	*head = new;
+
+	return (new);
 }
