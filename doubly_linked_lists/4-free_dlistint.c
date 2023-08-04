@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_list - Frees a list_t list.
+ * free_dlistint - frees a list.
  * @head: A pointer to the list_t list.
  */
 void free_dlistint(dlistint_t *head)
