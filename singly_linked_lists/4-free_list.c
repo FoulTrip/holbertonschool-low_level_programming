@@ -5,15 +5,15 @@
  * free_list - Frees a list_t list.
  * @head: A pointer to the list_t list.
  */
-void free_list(list_t *head)
+void free_dlistint(dlistint_t *head)
 {
-	list_t *tmp;
+	dlistint_t *current = head;
 
-	while (head)
+	while (current != NULL)
 	{
-		tmp = head->next;
-		free(head->str);
-		free(head);
-		head = tmp;
+		dlistint_t *next = current->next;
+
+		free(current);
+		current = next;
 	}
 }
