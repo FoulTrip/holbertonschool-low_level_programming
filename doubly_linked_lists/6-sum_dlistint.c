@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * jsum_dlistint - sum of all the data (n) of a linked list.
+ * sum_dlistint - sum of all the data (n) of a linked list.
  * @head: pointer
  *
  * Return: sum of all dates
@@ -15,7 +15,7 @@ int sum_dlistint(dlistint_t *head)
 
 	while (head != NULL)
 	{
-		sum = head->n;
+		sum += head->n;
 		head = head->next;
 	}
 
