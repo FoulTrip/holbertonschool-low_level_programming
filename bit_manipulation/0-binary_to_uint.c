@@ -8,21 +8,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
+	unsigned int number = 0, mult = 1;
+	int lenght;
+	
+	if (b == '\0')
 		return (0);
-
-	unsigned int response = 0;
-	int index = 0;
-
-	while (b[index])
+	for (lenght = 0; b[lenght];)
+		lenght++;
+	for (lenght -= 1; lenght >= 0; lenght--)
 	{
-		if (b[index] != '0' && b[index] != '1')
+		if (b[lenght] != '\0' && b[lenght] != '1')
 			return (0);
-		response = response << 1;
-		if (b[index] == '1')
-			response = response | 1;
-		index++;
+		number += (b[lenght] - '0') * mult;
+		mult *= 2;
 	}
 
-	return (response);
+	return (number);
 }
