@@ -3,7 +3,7 @@
 /**
  * clear_bit - sets the value of a bit to 0 at a given index.
  * @n: Pointer to the bit.
- * index: index to set the value at - indices start at 0.
+ * @index: index to set the value at - indices start at 0.
  *
  * Return: If an error occurs: -1.
  *         OtherWise: 1.
