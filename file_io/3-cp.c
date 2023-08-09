@@ -24,13 +24,13 @@ char *add_file(char *filename)
  * close_file - close file ._.
  * @fd: file identifier
  */
-void *close_file(int fd)
+void close_file(int fd)
 {
-	int c;
+	int result;
 
-	c = close(fd);
+	result = close(fd);
 
-	if (c == -1)
+	if (result == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
