@@ -13,7 +13,7 @@ char add_file(char *filename)
 
 	if (data == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write from file");
+		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", filename);
 		exit(99);
 	}
 
