@@ -8,16 +8,16 @@
  */
 char add_file(char *filename)
 {
-	char *data;
-	data = malloc(sizeof(char) * 1024);
+	char *buffer;
+	buffer = malloc(sizeof(char) * 1024);
 
-	if (data == NULL)
+	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", filename);
 		exit(99);
 	}
 
-	return (data);
+	return (buffer);
 }
 
 /**
@@ -26,11 +26,11 @@ char add_file(char *filename)
  */
 void close_file(int fd)
 {
-	int close;
+	int c;
 
-	close = close(fd);
+	c = close(fd);
 
-	if (close == -1)
+	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100)
@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
-			exit(99)
+			exit(99);
 		}
 
 		read = read(from, buffer, 1024);
