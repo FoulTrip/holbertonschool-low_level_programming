@@ -6,7 +6,7 @@
  *
  * Return: pointer to the new buffer
  */
-char add_file(char *filename)
+char *add_file(char *filename)
 {
 	char *buffer;
 	buffer = malloc(sizeof(char) * 1024);
@@ -24,7 +24,7 @@ char add_file(char *filename)
  * close_file - close file ._.
  * @fd: file identifier
  */
-void close_file(int fd)
+void *close_file(int fd)
 {
 	int close;
 
