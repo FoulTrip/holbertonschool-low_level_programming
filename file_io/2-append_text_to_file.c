@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		int lenght_Text, lenghtWrite;
 
-		for (lenght_Text; text_content[lenght_Text] != '\0'; lenght_Text++)
+		for (lenght_Text = 0; text_content[lenght_Text] != '\0'; lenght_Text++)
 			;
 
 		lenghtWrite = write(descriptor, text_content, lenght_Text);
