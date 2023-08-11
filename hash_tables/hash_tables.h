@@ -22,7 +22,7 @@ typedef struct hash_node_s
  * @size: Zise of array
  * @array: an array of size @size
  */
-typedef struct hash_table_S
+typedef struct hash_table_s
 {
 	unsigned long int size;
 	hash_node_t **array;
