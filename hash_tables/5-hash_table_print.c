@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (subIndex = 0; subIndex < ht->size; subIndex++)
 	{
-		if (ht-array[subIndex])
+		if (ht->array[subIndex])
 		{
 			pointer = ht->array[subIndex];
 			while (pointer)
