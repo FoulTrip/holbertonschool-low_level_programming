@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *value_copy;
 	unsigned long int index, subIndex;
 
-	if (ht == NULL || key == NULL || *key == NULL ||value == NULL)
+	if (ht == NULL || key == NULL || *key == NULL || value == NULL)
 		return (0);
 
 	value_copy = strdup(value);
