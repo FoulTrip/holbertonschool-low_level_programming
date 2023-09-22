@@ -1,18 +1,19 @@
 #include "search_algos.h"
 
 /**
- * linear_search - Busca un valor en un array de enteros utilizando la búsqueda lineal.
- * 
+ * linear_search - Busca un valor en un array de enteros
+ *                 utilizando la búsqueda lineal.
+ *
  * @array: Puntero al primer elemento del array.
  * @size: Tamaño del array.
  * @value: Valor que se busca.
- * 
+ *
  * Return: El índice donde se encontró el valor o -1 si no se encontró.
 */
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
-	
+
 	if (array == NULL)
 		return (-1);
 
@@ -22,6 +23,6 @@ int linear_search(int *array, size_t size, int value)
 		if (array[i] == value)
 			return ((int)i);
 	}
-	
+
 	return (-1);
 }
