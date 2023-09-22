@@ -5,7 +5,7 @@
  * @array: Puntero al primer elemento del array.
  * @size: Tamaño del array.
  * @value: Valor que se busca.
- * 
+ *
  * Return: Índice donde se encuentra el valor o -1 si no se encuentra.
 */
 int binary_search(int *array, size_t size, int value)
@@ -14,7 +14,7 @@ int binary_search(int *array, size_t size, int value)
 	int right = size - 1;
 	int mid;
 	int i;
-	
+
 	if (array == NULL || size == 0)
 		return (-1);
 
@@ -32,7 +32,7 @@ int binary_search(int *array, size_t size, int value)
 		printf("\n");
 
 		if (array[mid] == value)
-			return mid;
+			return (mid);
 		else if (array[mid] < value)
 			left = mid + 1;
 		else
